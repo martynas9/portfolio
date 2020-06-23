@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>muportfolio</title>
+        <script src="https://kit.fontawesome.com/4070a9f742.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="bglayer"></div>
+        <div id="content">
+            
+            <header id="header">
+                <img src="./src/img/logo.png" alt="logo" id="logo" />
+                <nav class="pagenav">
+                    <a class="pagenav__link pagenav__link--about current" href="javascript:void(0)">ABOUT ME</a>
+                    <a class="pagenav__link pagenav__link--work" href="javascript:void(0)">MY WORK</a>
+                    <a class="pagenav__link pagenav__link--contacts" href="javascript:void(0)">CONTACTS</a>
+                </nav>
+                <i class="fas fa-bars nav-list-btn"></i>
+                <i class="fas fa-times nav-list-btn-2"></i>
+            </header>
+
+            <div id="about" class="current">
+                <h1>Hello!</h1>
+                <h2>I'm Martynas, a web developer living in Vilnius, Lithuania.</h2>
+                <p>I have skills using HTML, CSS, Sass, JavaScript, jQuery and React.</p>
+                <p>You can check some of my work by clicking on the button below:</p>
+                <a id="view-work" href="javascript:void(0)">VIEW MY WORK <i class="fas fa-arrow-right view-work-arrow"></i></a>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <ul class="slideshow__list">
+                        <li class="slideshow__list__item current">
+                            <img class="slideshow__list__item__img" src="./src/img/work/weathermap.png"/>
+                            <div class="slideshow__list__item__layer">
+                                <a class="slideshow__list__item__layer__link" href="./weathermap" target="_blank" >Visit webpage</a>
+                            </div>
+                            <div class="slideshow__list__item__desc">Weathermap app</div>
+                        </li>
+                        <li class="slideshow__list__item">
+                            <img class="slideshow__list__item__img" src="./src/img/work/arkanoid.png"/>
+                            <div class="slideshow__list__item__layer">
+                                <a class="slideshow__list__item__layer__link" href="./arkanoid" target="_blank" >Visit webpage</a>
+                            </div>
+                            <div class="slideshow__list__item__desc">Arkanoid game</div>
+                        </li>
+                        <li class="slideshow__list__item">
+                            <img class="slideshow__list__item__img" src="./src/img/work/arkanoid_lc.png"/>
+                            <div class="slideshow__list__item__layer">
+                                <a class="slideshow__list__item__layer__link" href="./arkanoid_lc" target="_blank" >Visit webpage</a>
+                            </div>
+                            <div class="slideshow__list__item__desc">Arkanoid game level editor</div>
+                        </li>
+                        <li class="slideshow__list__item">
+                            <img class="slideshow__list__item__img" src="./src/img/work/fcc.png"/>
+                            <div class="slideshow__list__item__layer">
+                                <a class="slideshow__list__item__layer__link" href="https://codepen.io/collection/Xmqbbq" target="_blank" >Visit webpage</a>
+                            </div>
+                            <div class="slideshow__list__item__desc">freeCodeCamp projects on CodePen</div>
+                        </li>
+                    </ul>
+                    <i class="fas fa-chevron-left slideshow__arrow slideshow__arrow--left"></i>
+                    <i class="fas fa-chevron-right slideshow__arrow slideshow__arrow--right"></i>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div class="contacts-container--full">
+                    <a class="contact" href="mailto:martynas.utka@gmail.com">
+                        <i class="fas fa-envelope-square contact__icon"></i>
+                        <p class="contact__text">martynas.utka@gmail.com</p>
+                    </a>
+                    <a class="contact" href="https://www.linkedin.com/in/martynas-u/">
+                        <i class="fab fa-linkedin contact__icon"></i> 
+                        <p class="contact__text">linkedin.com/in/martynas-u</p>
+                    </a>
+                    <a class="contact" href="https://github.com/martynas9">
+                        <i class="fab fa-github-square contact__icon"></i>
+                        <p class="contact__text">github.com/martynas9</p>
+                    </a>
+                    <a class="contact" href="https://codepen.io/martynas9">
+                        <i class="fab fa-codepen contact__icon"></i>
+                        <p class="contact__text">codepen.io/martynas9</p>
+                    </a>
+                </div>
+                <div class="contacts-container">
+                    <a class="contact" href="mailto:martynas.utka@gmail.com">
+                        <i class="fas fa-envelope-square contact__icon"></i>
+                    </a>
+                    <a class="contact" href="https://www.linkedin.com/in/martynas-u/">
+                        <i class="fab fa-linkedin contact__icon"></i> 
+                    </a>
+                    <a class="contact" href="https://github.com/martynas9">
+                        <i class="fab fa-github-square contact__icon"></i>
+                    </a>
+                    <a class="contact" href="https://codepen.io/martynas9">
+                        <i class="fab fa-codepen contact__icon"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./src/app.js"></script>
+    </body>
+</html>
